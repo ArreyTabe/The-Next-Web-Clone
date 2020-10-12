@@ -49,7 +49,7 @@ navigation
   }
 
   > :nth-child(2):before {
-    content: "";
+    content: '';
     width: 1px;
     background-color: #eee;
     position: absolute;
@@ -57,7 +57,7 @@ navigation
   }
 
   > :nth-child(2):after {
-    content: "";
+    content: '';
     width: 1px;
     background-color: #eee;
     position: absolute;
@@ -185,13 +185,59 @@ main {
   border: 0;
 }
 .articles {
+  header {
+    width: 100%;
+    border: 2px solid seagreen;
+    margin-bottom: 4rem;
+    position: relative;
+    height: 9rem;
+  }
 }
-header {
-  width: 100%;
-  border: 2px solid seagreen;
-  margin-bottom: 4rem;
-  position: relative;
+
+.articles-info {
+  border: 1px solid red;
+  position: absolute;
+  top: 3.1rem;
+
+  h5 {
+    font-family: sans-serif;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  h2 a {
+    font-family: sans-serif;
+    font-size: 1.25rem;
+    color: #fff;
+    text-decoration: none;
+  }
 }
+
+.articles-author {
+  color: #ffffff99;
+  font-family: arial;
+  line-height: 1rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  border: 1px solid salmon;
+
+  a {
+    text-decoration: none;
+    color: #ffffff99;
+  }
+  a:focus,
+  a:hover {
+    color: white;
+  }
+}
+
+.author-icon {
+  font-size: 1.6rem;
+}
+
 .articles__background {
   background: #a18c8c url(../images/tnw2020-feature.jpg);
   background-repeat: no-repeat;

@@ -46,7 +46,7 @@ navigation
 }
 
 .interaction > :nth-child(2):before {
-  content: "";
+  content: '';
   width: 1px;
   background-color: #eee;
   position: absolute;
@@ -54,7 +54,7 @@ navigation
 }
 
 .interaction > :nth-child(2):after {
-  content: "";
+  content: '';
   width: 1px;
   background-color: #eee;
   position: absolute;
@@ -207,11 +207,61 @@ main {
   border: 0;
 }
 
-header {
+.articles header {
   width: 100%;
   border: 2px solid seagreen;
   margin-bottom: 4rem;
   position: relative;
+  height: 9rem;
+}
+
+.articles-info {
+  border: 1px solid red;
+  position: absolute;
+  top: 3.1rem;
+}
+
+.articles-info h5 {
+  font-family: sans-serif;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.articles-info h2 a {
+  font-family: sans-serif;
+  font-size: 1.25rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.articles-author {
+  color: #ffffff99;
+  font-family: arial;
+  line-height: 1rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid salmon;
+}
+
+.articles-author a {
+  text-decoration: none;
+  color: #ffffff99;
+}
+
+.articles-author a:focus,
+.articles-author a:hover {
+  color: white;
+}
+
+.author-icon {
+  font-size: 1.6rem;
 }
 
 .articles__background {
