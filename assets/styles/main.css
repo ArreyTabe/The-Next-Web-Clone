@@ -12,10 +12,11 @@ navigation
 */
 .navigation {
   position: fixed;
+  display: none;
   top: 0;
   margin: 0;
   left: 0;
-  right: 0;
+  right: -100%;
   z-index: 1000;
   width: 100%;
   min-height: 100%;
@@ -58,7 +59,45 @@ navigation
 
 .top-social-icons > * {
   font-weight: normal;
-  font-size: 18px;
+  font-size: 1.4rem;
   color: #fff;
+}
+
+.header-nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2rem;
+  width: 80%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.header-nav-links h5 {
+  font-family: sans-serif;
+  font-size: 1.14rem;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.header-nav-links ul {
+  list-style: none;
+}
+
+.header-nav-links li {
+  margin-bottom: 1rem;
+}
+
+.header-nav-links a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #ffffff99;
+  line-height: 1rem;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.14rem;
 }
 /*# sourceMappingURL=main.css.map */
