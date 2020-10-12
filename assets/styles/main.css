@@ -25,6 +25,55 @@ navigation
   transition: all 0.2s ease-in;
 }
 
+.interaction {
+  padding-top: 0.1rem;
+  position: fixed;
+  top: 0;
+  -webkit-box-shadow: 5px 4px 8px #eee;
+          box-shadow: 5px 4px 8px #eee;
+  width: 100%;
+  height: 3rem;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.logo {
+  clear: both;
+  position: absolute;
+  top: 0;
+  background-color: black;
+  height: 100%;
+}
+
+.logo-img {
+  margin: 0.8rem;
+  width: 5rem;
+  height: 1rem;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.search {
+  float: right;
+  width: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  background: royalblue;
+  height: 100%;
+  top: 0;
+}
+
 .hamburger-open {
   float: right;
   margin-top: 10px;
