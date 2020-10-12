@@ -37,6 +37,27 @@ navigation
   z-index: 10;
 }
 
+.interaction > :nth-child(2) {
+  position: relative;
+}
+
+.interaction > :nth-child(2):before {
+  content: '';
+  width: 1px;
+  background-color: #eee;
+  position: absolute;
+  height: 100%;
+}
+
+.interaction > :nth-child(2):after {
+  content: '';
+  width: 1px;
+  background-color: #eee;
+  position: absolute;
+  height: 100%;
+  left: 0;
+}
+
 .logo {
   clear: both;
   position: absolute;
@@ -51,12 +72,6 @@ navigation
   height: 1rem;
 }
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
 .search {
   float: right;
   width: 8rem;
@@ -69,9 +84,31 @@ navigation
       -ms-flex-align: center;
           align-items: center;
   font-size: 1.5rem;
-  background: royalblue;
   height: 100%;
   top: 0;
+}
+
+.search > * {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-toggle {
+  color: #ff4422;
+}
+
+.search-btn {
+  font-weight: 700;
+  color: #bebebe;
+}
+
+.search-btn :hover {
+  color: #808080;
 }
 
 .hamburger-open {
@@ -148,5 +185,30 @@ navigation
   line-height: 1rem;
   font-family: Helvetica, sans-serif;
   font-size: 1.14rem;
+}
+
+/* main section*/
+main {
+  margin-top: 4rem;
+}
+
+.hide {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.articles__background {
+  background: #a18c8c url("../images/tnw2020-feature.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 90%;
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */
