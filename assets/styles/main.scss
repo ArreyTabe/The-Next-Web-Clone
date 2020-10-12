@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+/*
+==================
+navigation
+==================
+*/
+
 .navigation {
   position: fixed;
   top: 0;
@@ -23,3 +29,42 @@
   );
   transition: all 0.2s ease-in;
 }
+.hamburger-open {
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+}
+.top-nav {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+
+}
+.top-social-icons {
+  display: flex;
+  justify-content: space-around;
+ border-bottom: 1px solid #c6c3c3;
+ border-top: 1px solid #c6c3c3;
+position: relative;
+ padding: 15px 150px 8px 25px ;
+
+
+ > * {
+   font-weight: normal;
+  font-size: 18px;
+  color: #fff;
+}
+
+//  ::before  {
+//    height: 1px;
+//    background-color: #c6c3c3;
+//    width: 100%;
+//    position: absolute;
+//  }
+}
+
+
+ 
