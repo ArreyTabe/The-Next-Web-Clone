@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 * {
   margin: 0;
   padding: 0;
@@ -31,14 +34,6 @@ navigation
   transition: all 0.2s ease-in;
 }
 
-// .navigation:target {
-//   display: block;
-//   right: 0;
-// }
-
-// .navigation:target > .hamburger-open {
-//   display: none;
-// }
 .interaction {
   padding-top: 0.1rem;
   position: fixed;
@@ -54,7 +49,7 @@ navigation
   }
 
   > :nth-child(2):before {
-    content: '';
+    content: "";
     width: 1px;
     background-color: #eee;
     position: absolute;
@@ -62,7 +57,7 @@ navigation
   }
 
   > :nth-child(2):after {
-    content: '';
+    content: "";
     width: 1px;
     background-color: #eee;
     position: absolute;
@@ -179,7 +174,6 @@ navigation
 main {
   margin-top: 4rem;
 }
-
 .hide {
   position: absolute;
   width: 1px;
@@ -190,12 +184,20 @@ main {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+.articles {
+}
+header {
+  width: 100%;
+  border: 2px solid seagreen;
+  margin-bottom: 4rem;
+  position: relative;
+}
 .articles__background {
-  background: rgb(161, 140, 140) url('../images/tnw2020-feature.jpg') no-repeat;
+  background: #a18c8c url(../images/tnw2020-feature.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-
-  height: 200px;
-  width: 90%;
-  display: block;
+  background-position: 40% 50%;
+  position: absolute;
+  height: 9rem;
+  width: 100%;
 }
