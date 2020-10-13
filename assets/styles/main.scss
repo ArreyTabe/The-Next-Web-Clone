@@ -49,7 +49,7 @@ navigation
   }
 
   > :nth-child(2):before {
-    content: '';
+    content: "";
     width: 1px;
     background-color: #eee;
     position: absolute;
@@ -57,7 +57,7 @@ navigation
   }
 
   > :nth-child(2):after {
-    content: '';
+    content: "";
     width: 1px;
     background-color: #eee;
     position: absolute;
@@ -187,30 +187,41 @@ main {
 .articles {
   header {
     width: 100%;
-    border: 2px solid seagreen;
-    margin-bottom: 4rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
     position: relative;
     height: 9rem;
   }
 }
 
+.articles__background {
+  background: #a18c8c url(../images/tnw2020-feature.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 40% 50%;
+  position: absolute;
+  height: 9rem;
+  width: 100%;
+}
+
 .articles-info {
-  border: 1px solid red;
   position: absolute;
   top: 3.1rem;
+  margin-left: 1rem;
 
   h5 {
     font-family: sans-serif;
     font-size: 0.875rem;
     text-transform: uppercase;
     color: #fff;
+   
   }
 
   h2 a {
     font-family: sans-serif;
     font-size: 1.25rem;
     color: #fff;
-    text-decoration: none;
+    text-decoration: none;  
   }
 }
 
@@ -222,7 +233,6 @@ main {
   font-weight: 400;
   display: flex;
   align-items: center;
-  border: 1px solid salmon;
 
   a {
     text-decoration: none;
@@ -238,8 +248,25 @@ main {
   font-size: 1.6rem;
 }
 
-.articles__background {
-  background: #a18c8c url(../images/tnw2020-feature.jpg);
+.articles__background-1 {
+  background-image: url(../images/tnw2020.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 40% 50%;
+  position: absolute;
+  height: 9rem;
+  width: 100%;
+}
+.articles-info-middle {
+  display: flex;
+  align-items: flex-end;
+  top: 6rem;
+  // bottom: 0;
+}
+
+.articles__background-2 {
+  background-image: url(../images/dgp.jpg);
+  
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 40% 50%;
