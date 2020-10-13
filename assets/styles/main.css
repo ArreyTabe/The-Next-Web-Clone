@@ -1,8 +1,12 @@
-body * {
+* {
   margin: 0;
   padding: 0;
-  border: 0;
+  box-sizing: border-box;
+}
+
+body {
   overflow-x: hidden;
+  background: #f0f0f0;
 }
 
 .navigation {
@@ -15,12 +19,17 @@ body * {
   z-index: 1000;
   width: 100%;
   min-height: 100%;
-  background: linear-gradient(0.45turn, #cf0494, #e21d67, #ed2c4b, #fa3d2f, #ff4422);
+  background: linear-gradient(
+    0.45turn,
+    #cf0494,
+    #e21d67,
+    #ed2c4b,
+    #fa3d2f,
+    #ff4422
+  );
 }
 
 .interaction {
-  border: 1px solid salmon;
-  background: salmon;
   height: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29,6 +38,8 @@ body * {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding-top: 0;
+  background: #fff;
+  margin-bottom: 0.5rem;
 }
 
 .logo {
@@ -41,7 +52,8 @@ body * {
   height: 1rem;
 }
 
-.logo, .search {
+.logo,
+.search {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,11 +63,109 @@ body * {
 }
 
 .search {
-  background: teal;
   -ms-flex-preferred-size: 20%;
   flex-basis: 20%;
   -ms-flex-pack: distribute;
   justify-content: space-around;
+  font-size: 1.7rem;
+}
+
+.search-btn {
+  color: #919090;
+}
+
+.menu-toggle {
+  color: #ff4422;
+}
+
+.search-btn:hover {
+  color: #8a8989;
+}
+
+.section-1 {
+  display: grid;
+  height: 37rem;
+  grid-template-rows: repeat(3, 2fr);
+  gap: 0.7rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.section-1 > * {
+  background: #fff;
+}
+
+.section-1 > *:first-child {
+  background: linear-gradient(to bottom, transparent, black),
+    url('../images/tnw2020-feature.jpg');
+  background-size: cover;
+  background-position: 100% 45%;
+  cursor: pointer;
+}
+
+.section-1 > *:nth-child(2) {
+  background: linear-gradient(to bottom, transparent, black),
+    url('../images/dgp.jpg');
+  background-size: cover;
+  background-position: 100% 45%;
+  cursor: pointer;
+}
+
+.section-1 > *:nth-child(3) {
+  background: linear-gradient(to bottom, transparent, black),
+    url('../images/tnw2020.jpg') no-repeat;
+  background-size: cover;
+  background-position: 100% 45%;
+  cursor: pointer;
+}
+
+.articles {
+  display: flex;
+  align-items: flex-end;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.articles-info h5,
+h2 a {
+  color: white;
+}
+
+.articles-info > *:not(:last-child) {
+  margin-bottom: 0.3rem;
+}
+.articles h5 {
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.articles h2 a:link,
+.articles h2 a:visited {
+  font-family: sans-serif;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+.articles-author {
+  color: #ffffff99;
+  font-family: helvetica;
+  display: flex;
+  align-items: baseline;
+  font-size: 0.75rem;
+}
+
+.articles-author > * {
+  margin-right: 0.3rem;
+}
+
+.articles-author a:link,
+.articles-author a:visited {
+  color: #ffffff99;
+  text-decoration: none;
+}
+
+.articles-author a:hover {
+  color: #fff;
 }
 
 /*
@@ -203,9 +313,5 @@ navigation
 */
 
 /* main section*/
-
-.section-1 {
-  background: green;
-}
 
 /*# sourceMappingURL=main.css.map */
