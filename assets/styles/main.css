@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -83,6 +84,14 @@ time,
 mark,
 audio,
 video {
+=======
+body {
+  overflow-x: hidden;
+  background-color: teal;
+}
+
+body * {
+>>>>>>> d56ea9e34928f5cb7fa0d2729c8c5af42c3f75f9
   margin: 0;
   padding: 0;
   border: 0;
@@ -106,6 +115,7 @@ section {
   display: block;
 }
 
+<<<<<<< HEAD
 body {
   line-height: 1;
 }
@@ -329,4 +339,15 @@ px;px;px;px;px;px;px;px;px;px;px;px;px;px;px;px;px;px;px;px;
 // }
 
 // /* main section*/
+=======
+/*
+==================
+navigation
+==================
+*/
+/* main section*/
+.section-1 {
+  background: green;
+}
+>>>>>>> d56ea9e34928f5cb7fa0d2729c8c5af42c3f75f9
 /*# sourceMappingURL=main.css.map */
