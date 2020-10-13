@@ -1,5 +1,17 @@
 body {
   overflow-x: hidden;
+  width: 100%;
+  background-color: teal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 * {
@@ -14,21 +26,6 @@ body {
 navigation
 ==================
 */
-.navigation {
-  position: fixed;
-  display: none;
-  top: 0;
-  margin: 0;
-  left: 0;
-  right: -100%;
-  z-index: 1000;
-  width: 100%;
-  min-height: 100%;
-  background: linear-gradient(0.45turn, #cf0494, #e21d67, #ed2c4b, #fa3d2f, #ff4422);
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-
 .interaction {
   padding-top: 0.1rem;
   position: fixed;
@@ -46,7 +43,7 @@ navigation
 }
 
 .interaction > :nth-child(2):before {
-  content: "";
+  content: '';
   width: 1px;
   background-color: #eee;
   position: absolute;
@@ -54,7 +51,7 @@ navigation
 }
 
 .interaction > :nth-child(2):after {
-  content: "";
+  content: '';
   width: 1px;
   background-color: #eee;
   position: absolute;
@@ -194,6 +191,13 @@ navigation
 /* main section*/
 main {
   margin-top: 4rem;
+  background: rebeccapurple;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main section {
+  border: 1px solid red;
 }
 
 .hide {
@@ -207,8 +211,11 @@ main {
   border: 0;
 }
 
+.articles {
+  border: 1px solid green;
+}
+
 .articles header {
-  width: 100%;
   margin-bottom: 0.5rem;
   margin-left: 0.5rem;
   position: relative;
@@ -227,7 +234,7 @@ main {
 
 .articles-info {
   position: absolute;
-  top: 3.1rem;
+  top: 4.7rem;
   margin-left: 1rem;
 }
 
@@ -270,7 +277,9 @@ main {
 }
 
 .author-icon {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
 }
 
 .articles__background-1 {
