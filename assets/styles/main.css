@@ -31,14 +31,7 @@ navigation
   z-index: 1000;
   width: 100%;
   min-height: 100%;
-  background: linear-gradient(
-    0.45turn,
-    #cf0494,
-    #e21d67,
-    #ed2c4b,
-    #fa3d2f,
-    #ff4422
-  );
+  background: linear-gradient( 0.45turn, #cf0494, #e21d67, #ed2c4b, #fa3d2f, #ff4422);
 }
 
 .interaction {
@@ -68,8 +61,7 @@ navigation
   height: 1rem;
 }
 
-.logo,
-.search {
+.logo, .search {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,29 +109,26 @@ main
   padding-left: 0.5rem;
 }
 
-.section-1 > * {
+.section-1>* {
   background: #fff;
 }
 
-.section-1 > *:first-child {
-  background: linear-gradient(to bottom, transparent, black),
-    url('../images/tnw2020-feature.jpg');
+.section-1>*:first-child {
+  background: linear-gradient(to bottom, transparent, black), url('../images/tnw2020-feature.jpg');
   background-size: cover;
   background-position: 100% 45%;
   cursor: pointer;
 }
 
-.section-1 > *:nth-child(2) {
-  background: linear-gradient(to bottom, transparent, black),
-    url('../images/dgp.jpg');
+.section-1>*:nth-child(2) {
+  background: linear-gradient(to bottom, transparent, black), url('../images/dgp.jpg');
   background-size: cover;
   background-position: 100% 45%;
   cursor: pointer;
 }
 
-.section-1 > *:nth-child(3) {
-  background: linear-gradient(to bottom, transparent, black),
-    url('../images/tnw2020.jpg') no-repeat;
+.section-1>*:nth-child(3) {
+  background: linear-gradient(to bottom, transparent, black), url('../images/tnw2020.jpg') no-repeat;
   background-size: cover;
   background-position: 100% 45%;
   cursor: pointer;
@@ -151,12 +140,11 @@ main
   padding: 0 1rem 1rem 1rem;
 }
 
-.articles-info h5,
-h2 a {
+.articles-info h5, h2 a {
   color: white;
 }
 
-.articles-info > *:not(:last-child) {
+.articles-info>*:not(:last-child) {
   margin-bottom: 0.3rem;
 }
 
@@ -166,8 +154,7 @@ h2 a {
   text-transform: uppercase;
 }
 
-.articles h2 a:link,
-.articles h2 a:visited {
+.articles h2 a:link, .articles h2 a:visited {
   font-family: sans-serif;
   font-size: 1.25rem;
   text-decoration: none;
@@ -181,12 +168,11 @@ h2 a {
   font-size: 0.75rem;
 }
 
-.articles-author > * {
+.articles-author>* {
   margin-right: 0.3rem;
 }
 
-.articles-author a:link,
-.articles-author a:visited {
+.articles-author a:link, .articles-author a:visited {
   color: #ffffff99;
   text-decoration: none;
 }
@@ -216,7 +202,7 @@ latest-news
 .latest-news-title-link {
   text-transform: capitalize;
   text-decoration: none;
-  color: #f32f2f;
+  color: #ff4422;
   font-weight: bolder;
   font-size: 25px;
 }
@@ -243,6 +229,10 @@ latest-news
   font-weight: 600;
 }
 
+.latest-news-img-info > :first-child:hover {
+  color: #ff4422;
+}
+
 .latest-news-img-info ul {
   list-style: none;
   margin-top: 0.4rem;
@@ -252,6 +242,9 @@ latest-news
   text-decoration: none;
   font-size: 10px;
   color: #979292;
+}
+.latest-news-img-info ul li :first-child:hover {
+  color: #1d1c1c;
 }
 
 /*
@@ -326,7 +319,7 @@ latest-funding
   margin-bottom: 2rem;
 }
 
-.brand-price-and-type > :first-child {
+.brand-price-and-type> :first-child {
   text-decoration: none;
   color: #000;
   font-size: 1.1rem;
@@ -389,9 +382,11 @@ hard fork
   font-family: sans-serif;
   margin: 0.5rem 1.5rem 0.5rem 1.2rem;
 }
+
 .int-articles h3 {
   margin-bottom: 1.2rem;
 }
+
 .int-articles h3 a {
   text-transform: capitalize;
   text-decoration: none;
@@ -406,7 +401,7 @@ hard fork
 
 .about-hard-fork {
   height: 45vh;
-  background: ;
+  /* background: ; */
   background-size: cover;
   background-position: 100% 45%;
   display: flex;
@@ -425,24 +420,21 @@ hard fork
   font-size: 0.75rem;
 }
 
-.about-hard-author-name:link,
-.about-hard-author-name:visited {
+.about-hard-author-name:link, .about-hard-author-name:visited {
   margin-right: 0.3rem;
   color: #ffffff99;
   text-decoration: none;
 }
 
-.about-hard-author-name:hover,
- .about-hard-author-name:focus{
-color: #fff;
-
+.about-hard-author-name:hover, .about-hard-author-name:focus {
+  color: #fff;
 }
 
 .hard-fork-latest-info {
   background: #FFF4F2;
 }
 
-.hard-fork-info > *:not(:last-child) {
+.hard-fork-info>*:not(:last-child) {
   margin-bottom: 0.3rem;
   text-decoration: none;
 }
@@ -454,19 +446,18 @@ color: #fff;
   color: #fff;
 }
 
-.hard-fork-info a:link,
- .hard-fork-info a:visited{
-color: #fff;
-text-decoration: none;
-font-size: 1.25rem;
+.hard-fork-info a:link, .hard-fork-info a:visited {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.25rem;
 }
 
 .hard-fork-info a:hover {
-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .hard-fork-latest {
-  display:flex;
+  display: flex;
   justify-content: space-between;
 }
 
@@ -482,53 +473,48 @@ text-decoration: underline;
   font-size: 0.7rem;
   text-transform: uppercase;
   color: #ff4422;
-
 }
 
-.hard-fork-latest-info a:link,
- .hard-fork-latest-info a:visited{
+.hard-fork-latest-info a:link, .hard-fork-latest-info a:visited {
   font-family: helvetica;
-  font-size:.8rem;
-  text-decoration:none;
-  color:#ff4422;
+  font-size: .8rem;
+  text-decoration: none;
+  color: #ff4422;
   font-weight: bold;
 }
 
 .hard-fork-latest-info a:hover {
-  text-decoration: underline; 
+  text-decoration: underline;
 }
 
-
 .hard-fork-latest img {
-  height:6rem;
-  width:6rem;
+  height: 6rem;
+  width: 6rem;
 }
 
 .hard-fork-list {
   padding: .5rem .7rem 0 .7rem;
-  list-style:none;
+  list-style: none;
 }
 
-.hard-fork-list li{ 
-padding: .3rem; 
+.hard-fork-list li {
+  padding: .3rem;
 }
 
-.hard-fork-list li::before{ 
-content:'\2022';
-color:#ff4422;
-margin-left: -1em;
-display:inline-block;
-font-weight: bold;
-width: 1em;
-
+.hard-fork-list li::before {
+  content: '\2022';
+  color: #ff4422;
+  margin-left: -1em;
+  display: inline-block;
+  font-weight: bold;
+  width: 1em;
 }
 
-.hard-fork-list li{ 
-border-bottom: 1px solid #eee;
+.hard-fork-list li {
+  border-bottom: 1px solid #eee;
 }
 
-.hard-fork-list a:link,
-.hard-fork-list a:visited {
+.hard-fork-list a:link, .hard-fork-list a:visited {
   font-family: helvetica;
   font-size: 0.8125rem;
   text-decoration: none;
@@ -536,10 +522,49 @@ border-bottom: 1px solid #eee;
 }
 
 .hard-fork-list a:hover {
-  color:#000;
+  color: #000;
 }
 
+/*
+==================
+latest-deals
+==================
+*/
 
+.latest-deals {
+  margin: .5rem 1.5rem .5rem 1.2rem;
+  line-height: 1;
+  font-family: sans-serif;
+}
 
+.latest-deals-title-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1.2rem;
+}
 
+.latest-deals-title-info :first-child {
+  color: #ff4422;
+  text-decoration: none;
+}
 
+.latest-deals-title a {
+  font-size: 1.5625rem;
+}
+
+.latest-deals-title-info h5 {
+  font-size: 0.875rem;
+}
+
+.latest-deals-title-info :first-child:hover {
+  color: #000;
+}
+.latest-deals-item-ul li {
+  font-size: .8rem;
+}
+.latest-deals-item-ul li :first-child {
+color: #4e4c4c;
+text-decoration: line-through;
+margin-right: .5rem;
+}
