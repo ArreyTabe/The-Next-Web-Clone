@@ -398,12 +398,12 @@ hard fork
 .int-articles h3 a:hover {
   color: #000;
 }
-
 .about-hard-fork {
   height: 45vh;
-  /* background: ; */
+  background-image: linear-gradient(to bottom, transparent, black), url('../images/Edge-Logo-368x276.jpg');
   background-size: cover;
   background-position: 100% 45%;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
@@ -567,4 +567,120 @@ latest-deals
 color: #4e4c4c;
 text-decoration: line-through;
 margin-right: .5rem;
+}
+
+/*
+==================
+footer
+==================
+*/
+
+.footer {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.footer-links {
+  background: #131313;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  align-items: center;
+  padding-bottom: 1.4rem;
+}
+
+.social-icons {
+  margin-top:3rem;
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+.social-icons a:link ,
+.social-icons a:visited {
+  color: #eee;
+}
+
+.social-icons a:link > .footer-icons,
+.social-icons a:visited > .footer-icons {
+background:#333;
+}
+
+.social-icons a:hover > .footer-icons {
+background:#000;
+border: 2px solid #333;
+}
+.footer-icons{  
+border-radius: 50%;
+background: #fff;
+width: 3rem;
+height: 3rem;
+line-height: 2rem;
+display: flex;
+justify-content:center;
+align-items:center;
+transition: all .3s;
+}
+
+.footer-icons{
+  margin-right: .8rem;
+}
+
+.foot-links-items ul {
+  list-style: none;
+  display: flex;
+ }
+
+.foot-links-items li:not(:last-of-type) {
+  margin-right: 1rem;
+}
+
+.foot-links-items a:link,
+.foot-links-items a:visited {
+  color: #aaa;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.foot-links-items a:hover {
+color: #777;
+}
+
+
+.footer-copyright-info {
+  background: #000;
+   display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-logo img {
+width: 3rem;
+height: 1rem;
+}
+
+.footer-copyright-info p {
+  color:#aaa;
+}
+
+.footer-copyright-c-1 {
+  display: flex;
+}
+
+.footer-copyright-c-3,.footer-copyright-c-2 {
+  color:#aaa;
+}
+
+.footer-copyright-c-1,.footer-copyright-c-2 {
+  margin-bottom: .5rem;
+}
+
+.footer-copyright-c-3 a:link,
+.footer-copyright-c-3 a:visited {
+text-decoration:none;
+color:#aaa;
+font-weight: bold;
 }
