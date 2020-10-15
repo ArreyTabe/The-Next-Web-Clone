@@ -870,4 +870,21 @@ main
   .main {
     margin-top: .5rem;
   }
+
+   
+.section-1 {
+  display: grid;
+  height: 26rem;
+  grid-template-rows: repeat(2, 2fr);
+  grid-template-columns: repeat(2, 2fr);
+  gap: 0.4rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.section-1 > *:first-child {
+  grid-row: 1 / -1;
+  width: 490px; 
+}
+  
 }
