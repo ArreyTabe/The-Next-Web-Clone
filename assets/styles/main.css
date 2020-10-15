@@ -357,7 +357,7 @@ latest-funding
 }
 
 .latest-funding-title a {
-  color: #f32f2f;
+  color: #ff4422;
   font-size: 26.5px;
   font-weight: bold;
   text-decoration: none;
@@ -373,7 +373,7 @@ latest-funding
   line-height: 2;
   font-size: 15px;
   text-decoration: none;
-  color: #f32f2f;
+  color: #ff4422;
 }
 
 .latest-funding ul a:hover {
@@ -394,7 +394,7 @@ latest-funding
 
 .brand-name {
   height: 2.9rem;
-  background: #f13e26;
+  background: #ff4422;
   padding-top: 1rem;
   text-transform: uppercase;
 }
@@ -883,23 +883,71 @@ main
     grid-row: 1 / -1;
     width: 490px;
   }
-  /* .latest-news {
-  margin-top: 2rem;
-  font-family: sans-serif;
-  margin: 0.5rem 1.5rem 0.5rem 1.2rem;
-  line-height: 1;
-} */
+ 
+  /*
+==================
+latest-news
+==================
+*/
+
   .latest-news-items-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
   gap: .1rem;
   }
+
   .latest-news-items {
     flex-direction: column;
   }
+
   .latest-news-img {
     width: 15rem;
     height: 6.9rem;
   }
+
+   /*
+==================
+latest funding
+==================
+*/
+
+.latest-funding ul {
+  display: flex;
+}
+
+
+.latest-funding li {
+  margin-right: 1rem;
+}
+
+.second-list-item {
+  position: relative;
+}
+
+.second-list-item:before {
+  height: 50%;
+  width: 1px;
+  background: #ff4422;
+  content: '';
+  position:absolute;
+  top: 8px;
+  left: -8px;
+}
+
+.second-list-item:after {
+  height: 50%;
+  width: 1px;
+  background: #ff4422;
+  content: '';
+  position:absolute;
+  top: 8px;
+  right: -8px;
+}
+
+.latest-funding-brands-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1  rem;
+}
 }
