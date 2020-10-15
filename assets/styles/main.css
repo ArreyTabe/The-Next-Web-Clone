@@ -13,6 +13,7 @@ body
 body {
   overflow-x: hidden;
   background: #fff;
+  /* min-width:350px */
 }
 
 /*
@@ -222,14 +223,14 @@ latest-news
   margin-right: 0.9rem;
 }
 
-.latest-news-img-info > :first-child {
+.latest-news-img-info> :first-child {
   text-decoration: none;
   font-size: 15px;
   color: #111;
   font-weight: 600;
 }
 
-.latest-news-img-info > :first-child:hover {
+.latest-news-img-info> :first-child:hover {
   color: #ff4422;
 }
 
@@ -243,6 +244,7 @@ latest-news
   font-size: 10px;
   color: #979292;
 }
+
 .latest-news-img-info ul li :first-child:hover {
   color: #1d1c1c;
 }
@@ -398,6 +400,7 @@ hard fork
 .int-articles h3 a:hover {
   color: #000;
 }
+
 .about-hard-fork {
   height: 45vh;
   background-image: linear-gradient(to bottom, transparent, black), url('../images/Edge-Logo-368x276.jpg');
@@ -459,6 +462,7 @@ hard fork
 .hard-fork-latest {
   display: flex;
   justify-content: space-between;
+  margin-top: .3rem;
 }
 
 .hard-fork-latest-info {
@@ -560,13 +564,15 @@ latest-deals
 .latest-deals-title-info :first-child:hover {
   color: #000;
 }
+
 .latest-deals-item-ul li {
   font-size: .8rem;
 }
+
 .latest-deals-item-ul li :first-child {
-color: #4e4c4c;
-text-decoration: line-through;
-margin-right: .5rem;
+  color: #4e4c4c;
+  text-decoration: line-through;
+  margin-right: .5rem;
 }
 
 /*
@@ -579,64 +585,67 @@ footer
   margin-top: 5rem;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
+
 }
 
 .footer-links {
   background: #131313;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-around; */
   align-items: center;
   padding-bottom: 1.4rem;
 }
 
 .social-icons {
-  margin-top:3rem;
+  margin-top: 3rem;
   margin-bottom: 2rem;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-around; 
+ height: 5rem;
 }
 
-.social-icons a:link ,
-.social-icons a:visited {
+.social-icons a:link, .social-icons a:visited {
   color: #eee;
 }
 
-.social-icons a:link > .footer-icons,
-.social-icons a:visited > .footer-icons {
-background:#333;
+.social-icons a:link>.footer-icons, .social-icons a:visited>.footer-icons {
+  background: #333;
 }
 
-.social-icons a:hover > .footer-icons {
-background:#000;
-border: 2px solid #333;
-}
-.footer-icons{  
-border-radius: 50%;
-background: #fff;
-width: 3rem;
-height: 3rem;
-line-height: 2rem;
-display: flex;
-justify-content:center;
-align-items:center;
-transition: all .3s;
+.social-icons a:hover>.footer-icons {
+  background: #000;
+  border: 2px solid #333;
 }
 
-.footer-icons{
+.footer-icons {
+  border-radius: 50%;
+  background: #fff;
+  width: 2.3rem;
+  height: 2.3rem;
+  line-height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .3s;
+}
+
+.footer-icons {
   margin-right: .8rem;
 }
 
 .foot-links-items ul {
   list-style: none;
   display: flex;
- }
-
-.foot-links-items li:not(:last-of-type) {
-  margin-right: 1rem;
+  
 }
 
-.foot-links-items a:link,
-.foot-links-items a:visited {
+.foot-links-items li:not(:last-of-type) {
+  margin-right: .5rem;
+}
+
+.foot-links-items a:link, .foot-links-items a:visited {
   color: #aaa;
   font-family: sans-serif;
   font-size: 0.8rem;
@@ -645,42 +654,40 @@ transition: all .3s;
 }
 
 .foot-links-items a:hover {
-color: #777;
+  color: #777;
 }
-
 
 .footer-copyright-info {
   background: #000;
-   display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
 .footer-logo img {
-width: 3rem;
-height: 1rem;
+  width: 3rem;
+  height: 1rem;
 }
 
 .footer-copyright-info p {
-  color:#aaa;
+  color: #aaa;
 }
 
 .footer-copyright-c-1 {
   display: flex;
 }
 
-.footer-copyright-c-3,.footer-copyright-c-2 {
-  color:#aaa;
+.footer-copyright-c-3, .footer-copyright-c-2 {
+  color: #aaa;
 }
 
-.footer-copyright-c-1,.footer-copyright-c-2 {
+.footer-copyright-c-1, .footer-copyright-c-2 {
   margin-bottom: .5rem;
 }
 
-.footer-copyright-c-3 a:link,
-.footer-copyright-c-3 a:visited {
-text-decoration:none;
-color:#aaa;
-font-weight: bold;
+.footer-copyright-c-3 a:link, .footer-copyright-c-3 a:visited {
+  text-decoration: none;
+  color: #aaa;
+  font-weight: bold;
 }
