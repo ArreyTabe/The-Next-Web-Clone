@@ -22,17 +22,164 @@ navigation
 ==================
 */
 
+.nav-header {
+  display:flex;
+}
+
 .navigation {
+  flex-basis: 90%;
+}
+
+.logo {
+  flex-basis: 10%;
+}
+.navigation-mob {
   position: fixed;
   display: none;
   top: 0;
-  margin: 0;
-  left: 0;
-  right: -100%;
+  transform: translateX(-100%);
+  height: 100%;
   z-index: 1000;
-  width: 100%;
-  min-height: 100%;
-  background: linear-gradient( 0.45turn, #cf0494, #e21d67, #ed2c4b, #fa3d2f, #ff4422);
+  transition: all 2s ease;
+  overflow-x: visible;
+  overflow-y: auto;
+  background: #000;
+}
+
+.search {
+  border: 1px solid green;
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 80%;
+}
+
+.interaction {
+  border: 1px solid salmon;
+}
+.search-1 {
+  display: none;
+  border: 1px solid red;
+}
+
+.search-1 ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.search-1 li {
+  font-family: sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.search-1 a:link,
+.search-1 a:visited {
+  text-decoration: none;
+  color: #555;
+}
+
+.top-nav {
+  background-color: red;
+}
+
+.bottom-nav {
+  background-color: green;
+}
+
+.navigation:target {
+  display: block;
+  transform: translateX(0);
+  outline: none;
+}
+
+.menu-toggle {
+  color: #ff4422;
+}
+
+.search-btn {
+  font-weight: 700;
+  color: #bebebe;
+}
+
+.search-btn :hover {
+  color: #808080;
+}
+
+.hamburger-open {
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.top-nav {
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.top-social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  border-bottom: 1px solid #c6c3c3;
+  border-top: 1px solid #c6c3c3;
+  position: relative;
+  padding: 15px 150px 8px 25px;
+}
+
+.top-social-icons > * {
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.header-nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 2rem;
+  width: 80%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.header-nav-links h5 {
+  font-family: sans-serif;
+  font-size: 1.14rem;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.header-nav-links ul {
+  list-style: none;
+}
+
+.header-nav-links li {
+  margin-bottom: 1rem;
+}
+
+.header-nav-links a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #ffffff99;
+  line-height: 1rem;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.14rem;
 }
 
 .interaction {
@@ -54,15 +201,21 @@ navigation
 
 .logo {
   background: #111;
-  height: 100%;
 }
 
+.header-nav {
+  display:flex; 
+}
+.top-nav {
+  display:none;
+}
 .logo-img {
   width: 6rem;
   height: 1rem;
 }
 
-.logo, .search {
+.logo,
+.search {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,26 +263,29 @@ main
   padding-left: 0.5rem;
 }
 
-.section-1>* {
+.section-1 > * {
   background: #fff;
 }
 
-.section-1>*:first-child {
-  background: linear-gradient(to bottom, transparent, black), url('../images/tnw2020-feature.jpg');
+.section-1 > *:first-child {
+  background: linear-gradient(to bottom, transparent, black),
+    url('../images/tnw2020-feature.jpg');
   background-size: cover;
   background-position: 100% 45%;
   cursor: pointer;
 }
 
-.section-1>*:nth-child(2) {
-  background: linear-gradient(to bottom, transparent, black), url('../images/dgp.jpg');
+.section-1 > *:nth-child(2) {
+  background: linear-gradient(to bottom, transparent, black),
+    url('../images/dgp.jpg');
   background-size: cover;
   background-position: 100% 45%;
   cursor: pointer;
 }
 
-.section-1>*:nth-child(3) {
-  background: linear-gradient(to bottom, transparent, black), url('../images/tnw2020.jpg') no-repeat;
+.section-1 > *:nth-child(3) {
+  background: linear-gradient(to bottom, transparent, black),
+    url('../images/tnw2020.jpg') no-repeat;
   background-size: cover;
   background-position: 100% 45%;
   cursor: pointer;
@@ -141,11 +297,12 @@ main
   padding: 0 1rem 1rem 1rem;
 }
 
-.articles-info h5, h2 a {
+.articles-info h5,
+h2 a {
   color: white;
 }
 
-.articles-info>*:not(:last-child) {
+.articles-info > *:not(:last-child) {
   margin-bottom: 0.3rem;
 }
 
@@ -155,7 +312,8 @@ main
   text-transform: uppercase;
 }
 
-.articles h2 a:link, .articles h2 a:visited {
+.articles h2 a:link,
+.articles h2 a:visited {
   font-family: sans-serif;
   font-size: 1.25rem;
   text-decoration: none;
@@ -169,11 +327,12 @@ main
   font-size: 0.75rem;
 }
 
-.articles-author>* {
+.articles-author > * {
   margin-right: 0.3rem;
 }
 
-.articles-author a:link, .articles-author a:visited {
+.articles-author a:link,
+.articles-author a:visited {
   color: #ffffff99;
   text-decoration: none;
 }
@@ -223,14 +382,14 @@ latest-news
   margin-right: 0.9rem;
 }
 
-.latest-news-img-info> :first-child {
+.latest-news-img-info > :first-child {
   text-decoration: none;
   font-size: 15px;
   color: #111;
   font-weight: 600;
 }
 
-.latest-news-img-info> :first-child:hover {
+.latest-news-img-info > :first-child:hover {
   color: #ff4422;
 }
 
@@ -321,7 +480,7 @@ latest-funding
   margin-bottom: 2rem;
 }
 
-.brand-price-and-type> :first-child {
+.brand-price-and-type > :first-child {
   text-decoration: none;
   color: #000;
   font-size: 1.1rem;
@@ -403,7 +562,8 @@ hard fork
 
 .about-hard-fork {
   height: 45vh;
-  background-image: linear-gradient(to bottom, transparent, black), url('../images/Edge-Logo-368x276.jpg');
+  background-image: linear-gradient(to bottom, transparent, black),
+    url('../images/Edge-Logo-368x276.jpg');
   background-size: cover;
   background-position: 100% 45%;
   background-repeat: no-repeat;
@@ -423,21 +583,23 @@ hard fork
   font-size: 0.75rem;
 }
 
-.about-hard-author-name:link, .about-hard-author-name:visited {
+.about-hard-author-name:link,
+.about-hard-author-name:visited {
   margin-right: 0.3rem;
   color: #ffffff99;
   text-decoration: none;
 }
 
-.about-hard-author-name:hover, .about-hard-author-name:focus {
+.about-hard-author-name:hover,
+.about-hard-author-name:focus {
   color: #fff;
 }
 
 .hard-fork-latest-info {
-  background: #FFF4F2;
+  background: #fff4f2;
 }
 
-.hard-fork-info>*:not(:last-child) {
+.hard-fork-info > *:not(:last-child) {
   margin-bottom: 0.3rem;
   text-decoration: none;
 }
@@ -449,7 +611,8 @@ hard fork
   color: #fff;
 }
 
-.hard-fork-info a:link, .hard-fork-info a:visited {
+.hard-fork-info a:link,
+.hard-fork-info a:visited {
   color: #fff;
   text-decoration: none;
   font-size: 1.25rem;
@@ -462,26 +625,27 @@ hard fork
 .hard-fork-latest {
   display: flex;
   justify-content: space-between;
-  margin-top: .3rem;
+  margin-top: 0.3rem;
 }
 
 .hard-fork-latest-info {
   display: flex;
   flex-direction: column;
-  padding: .5rem .7rem 0 .7rem;
+  padding: 0.5rem 0.7rem 0 0.7rem;
 }
 
 .hard-fork-latest-info p {
-  margin-bottom: .4rem;
+  margin-bottom: 0.4rem;
   font-family: sans-serif;
   font-size: 0.7rem;
   text-transform: uppercase;
   color: #ff4422;
 }
 
-.hard-fork-latest-info a:link, .hard-fork-latest-info a:visited {
+.hard-fork-latest-info a:link,
+.hard-fork-latest-info a:visited {
   font-family: helvetica;
-  font-size: .8rem;
+  font-size: 0.8rem;
   text-decoration: none;
   color: #ff4422;
   font-weight: bold;
@@ -497,12 +661,12 @@ hard fork
 }
 
 .hard-fork-list {
-  padding: .5rem .7rem 0 .7rem;
+  padding: 0.5rem 0.7rem 0 0.7rem;
   list-style: none;
 }
 
 .hard-fork-list li {
-  padding: .3rem;
+  padding: 0.3rem;
 }
 
 .hard-fork-list li::before {
@@ -518,11 +682,12 @@ hard fork
   border-bottom: 1px solid #eee;
 }
 
-.hard-fork-list a:link, .hard-fork-list a:visited {
+.hard-fork-list a:link,
+.hard-fork-list a:visited {
   font-family: helvetica;
   font-size: 0.8125rem;
   text-decoration: none;
-  color: #555
+  color: #555;
 }
 
 .hard-fork-list a:hover {
@@ -536,7 +701,7 @@ latest-deals
 */
 
 .latest-deals {
-  margin: .5rem 1.5rem .5rem 1.2rem;
+  margin: 0.5rem 1.5rem 0.5rem 1.2rem;
   line-height: 1;
   font-family: sans-serif;
 }
@@ -566,13 +731,13 @@ latest-deals
 }
 
 .latest-deals-item-ul li {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .latest-deals-item-ul li :first-child {
   color: #4e4c4c;
   text-decoration: line-through;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 /*
@@ -585,7 +750,6 @@ footer
   margin-top: 5rem;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
-
 }
 
 .footer-links {
@@ -602,19 +766,21 @@ footer
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: space-around; 
- height: 5rem;
+  align-items: space-around;
+  height: 5rem;
 }
 
-.social-icons a:link, .social-icons a:visited {
+.social-icons a:link,
+.social-icons a:visited {
   color: #eee;
 }
 
-.social-icons a:link>.footer-icons, .social-icons a:visited>.footer-icons {
+.social-icons a:link > .footer-icons,
+.social-icons a:visited > .footer-icons {
   background: #333;
 }
 
-.social-icons a:hover>.footer-icons {
+.social-icons a:hover > .footer-icons {
   background: #000;
   border: 2px solid #333;
 }
@@ -628,24 +794,24 @@ footer
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .footer-icons {
-  margin-right: .8rem;
+  margin-right: 0.8rem;
 }
 
 .foot-links-items ul {
   list-style: none;
   display: flex;
-  
 }
 
 .foot-links-items li:not(:last-of-type) {
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
-.foot-links-items a:link, .foot-links-items a:visited {
+.foot-links-items a:link,
+.foot-links-items a:visited {
   color: #aaa;
   font-family: sans-serif;
   font-size: 0.8rem;
@@ -678,16 +844,50 @@ footer
   display: flex;
 }
 
-.footer-copyright-c-3, .footer-copyright-c-2 {
+.footer-copyright-c-3,
+.footer-copyright-c-2 {
   color: #aaa;
 }
 
-.footer-copyright-c-1, .footer-copyright-c-2 {
-  margin-bottom: .5rem;
+.footer-copyright-c-1,
+.footer-copyright-c-2 {
+  margin-bottom: 0.5rem;
 }
 
-.footer-copyright-c-3 a:link, .footer-copyright-c-3 a:visited {
+.footer-copyright-c-3 a:link,
+.footer-copyright-c-3 a:visited {
   text-decoration: none;
   color: #aaa;
   font-weight: bold;
+}
+
+@media screen and (min-width: 700px) {
+  /* body{
+     background-color: black;
+  } */
+
+  .logo-img {
+    width: 8rem;
+    height: 2rem;
+  }
+
+  .nav-header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr 3fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .menu-toggle {
+    display: none;
+  }
+
+  
+.top-nav {
+  background: salmon;
+  display:block;
+}
+
+
+.bottom-nav {
+  background:yellow;
+}
 }
