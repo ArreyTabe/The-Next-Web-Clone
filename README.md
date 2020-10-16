@@ -6,15 +6,15 @@ This project consists of replicating the The Next Web website putting emphasis o
 
 **Mobile view screenShot**
 
-![screenshot](assets/screenshot.png)
+![moblie view](assets/images/mob-view.png)
 
 **Tablet view screenShot**
 
-![screenshot](assets/screenshot.png)
+![tablet view](assets/images/tablet-view.png)
 
 **Laptop view screenShot**
 
-![screenshot](assets/screenshot.png)
+![desktop view](assets/images/desktop-view.png)
 
 ## Sample of The Next Web Page Website Clone with the following features:
 
@@ -27,7 +27,7 @@ This project consists of replicating the The Next Web website putting emphasis o
 
 - [![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com)
 - [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)
-- ![sass](assets/sass.png)
+
 
 
 ## Live Demo
