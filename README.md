@@ -32,7 +32,7 @@ This project consists of replicating the The Next Web website putting emphasis o
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/helciodev/Design-Teardown/bef692d542d2d76732fd41fa449b2cfd87add473/index.html)
+[Live Demo Link](https://rawcdn.githack.com/ArreyTabe/The-Next-Web-Clone/1941cc49d7ebf69ba7d648d20aa8839709a43d23/index.html)
 
 **See the page via the link above**
 
