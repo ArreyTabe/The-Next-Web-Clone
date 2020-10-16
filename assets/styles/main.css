@@ -948,6 +948,28 @@ latest funding
 .latest-funding-brands-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1  rem;
+  gap: 1rem;
+}
+
+   /*
+==================
+about hard fork section
+==================
+*/
+.int-articles-container {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1rem;
+  padding:  0.5rem 1.5rem 0.5rem 1.2rem;
+  
+
+}
+.int-articles {
+  font-family: sans-serif;
+  margin: 0
+}
+.hard-fork-latest {
+  margin-top: 0.1rem;
 }
 }
