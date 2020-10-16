@@ -964,7 +964,7 @@ about hard fork section
     padding: 0.5rem 1.5rem 0.5rem 1.2rem;
   }
   .about-hard-fork {
-    height: 26vh;
+    height: 65vh;
   }
   .int-articles {
     font-family: sans-serif;
@@ -1222,21 +1222,20 @@ about hard fork section
 */
   .int-articles-container {
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 1rem;
-    padding: 0.5rem 1.5rem 0.5rem 1.2rem;
+    grid-row-gap: 3rem;
+    padding: 3rem 5rem
   }
   .about-hard-fork {
-    height: 26vh;
+    height: 55vh;
   }
   .int-articles {
     font-family: sans-serif;
     margin: 0
   }
-  .hard-fork-latest {
-    margin-top: 0.1rem;
-  }
+  
   /*
 ==================
 latest deals
@@ -1244,36 +1243,17 @@ latest deals
 */
   .latest-deals-item-container {
     display: grid;
-    grid-template-columns: repeat(3, 2fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 1rem;
+    padding: 1rem 5rem;
   }
   .latest-news-img {
     width: 100%;
     height: 11.5rem;
     margin-right: 0.9rem;
   }
-  /*
-==================
-footer
-==================
-*/
-  .footer-copyright-info {
-    border-top: 3px solid #000;
- display: flex;
- flex-direction: row;
- justify-content: center;
-  align-items: center; 
-  
-  }
-  .footer-copyright-info >* {
-    margin-right: .8rem;
-    font-size: .9rem;
-  }
-.footer-copyright-c-2 {
-    margin-top: -.2rem;
-  }
-  .footer-copyright-c-3 {
-    margin-top: -.9rem;
+  .latest-deals-title-info {
+    padding: 1rem 5rem;
   }
 }
