@@ -206,6 +206,17 @@ main
   background: #fff;
 }
 
+.hide {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
 .section-1>*:first-child {
   background: linear-gradient(to bottom, transparent, black), url('../images/tnw2020-feature.jpg');
   background-size: cover;
@@ -385,7 +396,7 @@ latest-funding
 }
 
 .latest-funding-brands-hide {
-  display:none;
+  display: none;
 }
 
 .latest-funding-brands img {
@@ -859,11 +870,9 @@ tablet  break-point
     flex-basis: 70%;
     justify-content: space-between;
   }
-
   .bottom-nav-hide {
-    display:none;
+    display: none;
   }
-
   .bottom-nav ul a {
     text-decoration: none;
     color: #aaa;
@@ -874,7 +883,6 @@ tablet  break-point
   .bottom-nav ul a:hover {
     color: #555;
   }
-
   /*
 ==================
 main
@@ -996,24 +1004,22 @@ footer
 */
   .footer-copyright-info {
     border-top: 3px solid #000;
- display: flex;
- flex-direction: row;
- justify-content: center;
-  align-items: center; 
-  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
-  .footer-copyright-info >* {
+  .footer-copyright-info>* {
     margin-right: .8rem;
     font-size: .9rem;
   }
-.footer-copyright-c-2 {
+  .footer-copyright-c-2 {
     margin-top: -.2rem;
   }
   .footer-copyright-c-3 {
     margin-top: -.9rem;
   }
 }
-
 
 /*
 ==================
@@ -1022,137 +1028,117 @@ laptop  break-point
 */
 
 @media screen and (min-width: 1024px) {
-
-.nav-header {
-  display: grid;
-  grid-template-rows: repeat(2, 1fr 2fr);
-  top: 0;
-  z-index: 2;
-  position: static;
-  height: 5rem;
+  .nav-header {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr 2fr);
+    top: 0;
+    z-index: 2;
+    position: static;
+    height: 5rem;
   }
-
   .logo {
-  display: none;
-  align-items: center;
+    display: none;
+    align-items: center;
   }
-
   .logo-img {
-  width: 4.5rem;
-  height: 2rem;
-  display:none;
+    width: 4.5rem;
+    height: 2rem;
+    display: none;
   }
-
   .navigation {
-  grid-column: 1 / -1;
-  display: flex;
-  flex-direction: column;
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
   }
-
   .menu-toggle {
-  display: none;
+    display: none;
   }
-
   .top-nav {
-  background: #111;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: .6rem 1.5rem;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .6rem 1.5rem;
   }
-
   .top-nav li {
-  margin-right: 0.6rem;
+    margin-right: 0.6rem;
   }
-
   .top-nav a:link, .top-nav a:visited {
-  color: #ffffff99;
-  text-decoration: none;
-  font-family: helvetica;
-  font-size: 0.8125rem;
-  text-transform: capitalize;
+    color: #ffffff99;
+    text-decoration: none;
+    font-family: helvetica;
+    font-size: 0.8125rem;
+    text-transform: capitalize;
   }
-
   .top-nav a:hover, .top-nav a:focus {
-  color: #fff;
+    color: #fff;
   }
-
   .top-nav ul, .bottom-nav ul {
-  list-style: none;
-  display: flex;
+    list-style: none;
+    display: flex;
   }
-
   .bottom-nav {
-  background: #fff;
-  display: flex;
-  width: 100%;
-  padding: 1rem;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #eee;
+    background: #fff;
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
   }
-
   .bottom-nav ul {
-  flex-basis: 46%;
-  justify-content: space-around;
+    flex-basis: 46%;
+    justify-content: space-around;
   }
-
   .bottom-nav-hide {
-    display: block;;
+    display: block;
+    ;
   }
-
   .bottom-nav ul a {
-  text-decoration: none;
-  color: #aaa;
-  text-transform: uppercase;
-  font-size: .875rem;
-  font-family: sans-serif;
+    text-decoration: none;
+    color: #aaa;
+    text-transform: uppercase;
+    font-size: .875rem;
+    font-family: sans-serif;
   }
-
   .bottom-nav ul a:hover {
-  color: #555;
+    color: #555;
   }
-
   /*
 ==================
 main
 ==================
 */
-
   .main {
-  margin-top: 1.6rem;
+    margin-top: 1.6rem;
   }
-.latest-news-title {
-  padding-left: 5rem;
-}
-
+  .latest-news-title {
+    padding-left: 5rem;
+  }
   .section-1 {
-  display: grid;
-  height: 32rem;
-  grid-template-rows: repeat(2, 2fr);
-  grid-template-columns: repeat(2, 2fr);
-  gap: 0.4rem;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
+    display: grid;
+    height: 32rem;
+    grid-template-rows: repeat(2, 2fr);
+    grid-template-columns: repeat(2, 2fr);
+    gap: 0.4rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
   }
-
   .section-1>*:first-child {
-  grid-row: 1 / -1;
-  width: 810px;
-  } 
-
+    grid-row: 1 / -1;
+    width: 810px;
+  }
   /*
 ==================
 latest-news
 ==================
 */
-
   .latest-news-items-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 1.1rem;
-  padding: 0 5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.1rem;
+    padding: 0 5rem;
   }
   .latest-news-items {
     flex-direction: column;
@@ -1166,19 +1152,18 @@ latest-news
 latest funding
 ==================
 */
-.latest-funding-heading {
-  display: flex;
-  justify-content: space-between;
-  align-items:baseline;
-  margin-bottom: 1.1rem;
-}
-.latest-funding-title {
-  padding-left:5rem;
-}
+  .latest-funding-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1.1rem;
+  }
+  .latest-funding-title {
+    padding-left: 5rem;
+  }
   .latest-funding ul {
     display: flex;
-  padding-right:5rem;
-    
+    padding-right: 5rem;
   }
   .latest-funding li {
     margin-right: 1rem;
@@ -1210,11 +1195,9 @@ latest funding
     gap: 1rem;
     padding: 0 5rem;
   }
-
   .latest-funding-brands-hide {
-  display:block;
-}
-
+    display: block;
+  }
   /*
 ==================
 about hard fork section
@@ -1235,7 +1218,6 @@ about hard fork section
     font-family: sans-serif;
     margin: 0
   }
-  
   /*
 ==================
 latest deals
