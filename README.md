@@ -28,11 +28,31 @@ This project consists of replicating the The Next Web website putting emphasis o
 - [![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com)
 - [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)
 
+## Getting Started
+
+To get a local copy of this repository up and running follow these simple steps:
+
+### Prerequisites
+
+- A PC or device with internet connection with the ability to use command line  or terminal.
+
+### Setup
+
+- Open the command line  or terminal
+
+### Install
+
+- Go to your preferred directory
+- Run [ git clone git@github.com:ArreyTabe/The-Next-Web-Clone.git ] command
+
+### Usage
+
+- Open index.html file in any modern browser
 
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/ArreyTabe/The-Next-Web-Clone/1941cc49d7ebf69ba7d648d20aa8839709a43d23/index.html)
+[Live Demo Link](https://arreytabe.github.io/The-Next-Web-Clone/)
 
 **See the page via the link above**
 
