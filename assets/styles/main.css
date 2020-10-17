@@ -37,11 +37,13 @@ navigation
 .logo {
   padding: 0.7rem;
   background: #111;
+  z-index: 10;
 }
 
 .logo-img {
   width: 5rem;
   height: 1rem;
+  z-index:10;
 }
 
 .search {
@@ -62,6 +64,9 @@ navigation
   width: 5rem;
 }
 
+.medium-big {
+  display:none;
+}
 .search-btn {
   color: #919090;
 }
@@ -259,10 +264,21 @@ main
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-items: flex-end;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
   padding: 0 1rem 1rem 1rem;
+}
+
+
+
+.big-logo-date {
+display:none;
+
+}
+
+.articles-info {
+align-self: flex-end;
 }
 
 .articles h5 {
@@ -617,7 +633,7 @@ hard fork
 }
 
 .about-hard-fork {
-  height: 36vh;
+  height: 17rem;
   background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(black)), url("../images/Edge-Logo-368x276.jpg");
   background-image: linear-gradient(to bottom, transparent, black), url("../images/Edge-Logo-368x276.jpg");
   background-size: cover;
@@ -889,16 +905,17 @@ footer
 tablet  break-point
 ==================
 */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   .nav-header {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr 4fr)[2];
+    -ms-grid-columns: (1fr 4fr);
         grid-template-columns: repeat(2, 1fr 4fr);
     top: 0;
     z-index: 2;
     position: static;
     height: 5rem;
+    z-index: 100;
   }
   .logo {
     display: -webkit-box;
@@ -921,6 +938,7 @@ tablet  break-point
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+            z-index: 10;
   }
   .menu-toggle {
     display: none;
@@ -940,6 +958,7 @@ tablet  break-point
   .top-nav li {
     margin-right: 0.6rem;
   }
+  
   .bottom-nav ul a {
     text-decoration: none;
     color: #aaa;
@@ -995,6 +1014,24 @@ tablet  break-point
   .bottom-nav ul a:hover {
     color: #555;
   }
+
+  .medium-big {
+position: fixed;
+  top: 0;
+  width: 100%;
+  background:teal;
+  display:flex;
+  z-index: 5;
+}
+
+  .display-medium-big {
+    display:block;
+    width: 12%; 
+  }
+
+  .medium-big-nav {
+    width: 88%;
+  }
   /*
 ==================
 main
@@ -1007,9 +1044,9 @@ main
     display: -ms-grid;
     display: grid;
     height: 20rem;
-    -ms-grid-rows: (2fr)[2];
+    -ms-grid-rows: (2fr);
         grid-template-rows: repeat(2, 2fr);
-    -ms-grid-columns: (2fr)[2];
+    -ms-grid-columns: (2fr);
         grid-template-columns: repeat(2, 2fr);
     gap: 0.4rem;
     padding-right: 0.5rem;
@@ -1027,9 +1064,9 @@ latest-news
   .latest-news-items-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
+    -ms-grid-columns: (1fr);
         grid-template-columns: repeat(3, 1fr);
-    -ms-grid-rows: (1fr)[3];
+    -ms-grid-rows: (1fr);
         grid-template-rows: repeat(3, 1fr);
     gap: 1.1rem;
   }
@@ -1081,7 +1118,7 @@ latest funding
   .latest-funding-brands-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
+    -ms-grid-columns: (1fr);
         grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
   }
@@ -1093,9 +1130,9 @@ about hard fork section
   .int-articles-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (2fr)[2];
+    -ms-grid-columns: (2fr);
         grid-template-columns: repeat(2, 2fr);
-    -ms-grid-rows: (1fr)[5];
+    -ms-grid-rows: (1fr);
         grid-template-rows: repeat(5, 1fr);
     gap: 1rem;
     padding: 0.5rem 1.5rem 0.5rem 1.2rem;
@@ -1118,9 +1155,9 @@ latest deals
   .latest-deals-item-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (2fr)[3];
+    -ms-grid-columns: (2fr);
         grid-template-columns: repeat(3, 2fr);
-    -ms-grid-rows: (1fr)[3];
+    -ms-grid-rows: (1fr);
         grid-template-rows: repeat(3, 1fr);
     gap: 1rem;
   }
@@ -1162,7 +1199,7 @@ laptop  break-point
   .nav-header {
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: (1fr 2fr)[2];
+    -ms-grid-rows: (1fr 2fr);
         grid-template-rows: repeat(2, 1fr 2fr);
     top: 0;
     z-index: 2;
@@ -1175,11 +1212,7 @@ laptop  break-point
         -ms-flex-align: center;
             align-items: center;
   }
-  .logo-img {
-    width: 4.5rem;
-    height: 2rem;
-    display: none;
-  }
+ 
   .navigation {
     grid-column: 1 / -1;
     display: -webkit-box;
@@ -1243,17 +1276,28 @@ laptop  break-point
             align-items: center;
     border-bottom: 1px solid #eee;
   }
+
   .bottom-nav ul {
     -ms-flex-preferred-size: 46%;
-        flex-basis: 46%;
+        flex-basis: 60%;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
   .bottom-nav-hide {
     display: block;
   }
+  
   .bottom-nav ul a:hover {
     color: #555;
+  }
+
+   .display-medium-big {
+    display:block;
+    width: 10%; 
+  }
+
+  .medium-big-nav {
+    width: 90%;
   }
   /*
 ==================
@@ -1266,13 +1310,39 @@ main
   .latest-news-title {
     padding-left: 5rem;
   }
+
+.big-article-img {
+  display: flex;
+  flex-direction: column;
+ justify-content: space-between;
+}
+
+  .big-logo-date {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+.big-logo {
+      width: 26rem;
+    height: 6rem;
+}
+
+.big-date {
+  color:#fff;
+  font-size: .875rem;
+  font-family:sans-serif;
+}
+.big-logo-date, .articles-info {
+  width:100%;
+}
   .section-1 {
     display: -ms-grid;
     display: grid;
     height: 32rem;
-    -ms-grid-rows: (2fr)[2];
+    -ms-grid-rows: (2fr);
         grid-template-rows: repeat(2, 2fr);
-    -ms-grid-columns: (2fr)[2];
+    -ms-grid-columns: (2fr);
         grid-template-columns: repeat(2, 2fr);
     gap: 0.4rem;
     padding-right: 0.5rem;
@@ -1290,9 +1360,9 @@ latest-news
   .latest-news-items-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[4];
+    -ms-grid-columns: (1fr);
         grid-template-columns: repeat(4, 1fr);
-    -ms-grid-rows: (1fr)[2];
+    -ms-grid-rows: (1fr);
         grid-template-rows: repeat(2, 1fr);
     gap: 1.1rem;
     padding: 0 5rem;
@@ -1361,7 +1431,7 @@ latest funding
   .latest-funding-brands-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[4];
+    -ms-grid-columns: (1fr);
         grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     padding: 0 5rem;
@@ -1377,9 +1447,9 @@ about hard fork section
   .int-articles-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (2fr)[3];
+    -ms-grid-columns: (2fr);
         grid-template-columns: repeat(3, 2fr);
-    -ms-grid-rows: (1fr)[3];
+    -ms-grid-rows: (1fr);
         grid-template-rows: repeat(3, 1fr);
     gap: 1rem;
     grid-row-gap: 3rem;
@@ -1400,9 +1470,9 @@ latest deals
   .latest-deals-item-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (2fr)[4];
+    -ms-grid-columns: (2fr);
         grid-template-columns: repeat(4, 2fr);
-    -ms-grid-rows: (1fr)[2];
+    -ms-grid-rows: (1fr);
         grid-template-rows: repeat(2, 1fr);
     gap: 1rem;
     padding: 1rem 5rem;
